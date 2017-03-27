@@ -1,0 +1,401 @@
+how to scan:
+
+1. connect usb and turn on power
+2.on Mac system preference, open scanner 
+3. change dpi to 240 or over, select A4 size
+4. click overview to preview, then click scan to get pdf
+5.open multiple single pdf, reorder them and save the whole file as pdf.
+
+
+
+
+
+
+https://www.hackerrank.com/tests/1enfnm8g9f0/login?b=eyJ1c2VybmFtZSI6ImF1bmVpbEBob3RtYWlsLmNvbSIsInBhc3N3b3JkIjoiZDU1N2JjOTUiLCJoaWRlIjp0cnVlfQ==
+
+
+Made blue hosting
+In pro plan you can have 300,000 files and 3,000 tables for databases
+
+Helvetica, Arial
+
+http://www.deadlinkchecker.com
+
+http://codepen.io/ritz078/pen/wMPRzr
+
+
+ftp
+bombora
+UPLd2V2wWDSR
+
+
+
+
+https://www.elegantthemes.com/blog/tips-tricks/how-to-use-amazon-s3-and-cloudfront-with-wordpress
+
+sftp://162.242.251.126
+2222
+
+#header-menu li:not(:last-child)
+
+https://compressor.io/compress
+
+
+remove chrome style
+-webkit-appearance:none; 
+
+
+http://www.codeply.com/responsive-design-cheatsheet.html
+
+http://kenwheeler.github.io/slick/
+
+
+
+-webkit-transform: rotate(45deg);   /*Mobile safari requires*/
+  transform: rotate(45deg);
+
+ 
+
+transition:background-color 0.3s linear; 
+
+
+/*mobile slide in menu */
+<button type="button" class="navbar-toggle collapsed" data-toggle="slide-collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+
+$('[data-toggle="slide-collapse"]').on('click', function() {
+    $navMenuCont = $($(this).data('target'));
+    $navMenuCont.animate({'width':'toggle'}, 350);
+
+
+});
+
+
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 270px; /*example + never use min-width with this solution */
+    height: 100%;
+margin-top:0;
+}
+
+
+
+
+
+background image opacity:
+
+body{}
+
+body::before{
+content: '';
+  display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  z-index: -1;
+   background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    
+    
+}
+
+
+
+
+
+
+put image into pop up gallery - www.verdemanlyvale.com.au
+
+
+
+https://www.campaignmonitor.com/dev-resources/will-it-work/
+
+remove chrome style
+   -webkit-appearance:none ;
+
+
+loading animation
+http://tobiasahlin.com/spinkit/
+
+
+
+bracket shortcuts:
+command + shift +a : Align Assignments(add html tag to selected content)
+ul>li*4
+div.cntainer
+div#about
+
+
+
+
+blind slideshow example
+http://codepen.io/Kseso/details/wBlnH
+
+fold out
+http://jsfiddle.net/MK87R/1/
+
+smoothly scroll to anchor
+http://jsfiddle.net/YtJcL/
+
+logo in center bootstrap
+http://www.bootply.com/mQh8DyRfWY#
+
+http://www.w3schools.com/howto/howto_js_sidenav.asp
+
+bootstrap php contact form
+https://github.com/bootstrapbay/contact-form/blob/master/index.php
+
+
+lazy-carousel
+https://coderwall.com/p/6qaeya/lazy-carousel-in-bootstrap
+
+sortable portfolio
+http://jportilio.com/
+
+font-awesome social icon alignment:
+
+html structure:
+<ul     class="social"> 
+
+<li><a class="sl-fb" href="#"><i class="fa fa-facebook"></i></a></li> 
+
+<li><a class="sl-tw" href="#"><i class="fa fa-twitter"></i></a></li> 
+
+<li><a class="sl-gp" href="#"><i class="fa fa-google-plus"></i></a></li> 
+
+<li><a class="sl-ln" href="#"><i class="fa fa-rss"></i></a></li> 
+
+<li><a class="sl-ln" href="#"><i class="fa fa-dribbble"></i></a></li> 
+
+<li><a class="sl-ln" href="#"><i class="fa fa-instagram"></i></a></li> 
+
+</ul> 
+
+
+css:
+
+.social li {
+	float: left;
+	list-style: none;
+	margin: 10px 7px 5px;
+}
+
+.social li a {
+	width: 40px;
+	height: 40px;
+	color: #000;
+	text-align: center;
+	line-height: 40px;
+	background: #fff;
+	border-radius: 50%;
+	display: block;
+	font-size: 18px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+vertical margin merge fix:
+
+<div class="middle">
+  <div class="firstChild">child</div>
+  <div class="secondChild"></div>
+</div>
+
+middle and firstChild margin top will merge. To solve this, set valid padding-top or border for middle class. like padding:1px;  or border:1px solid #fff;
+
+position: relative original div will still occupy its place
+
+
+
+ <a href="javascript:void(0);" class="menu--link" rel="zoo,stadium,night_club,museum,movie_theater,amusement_park,aquarium,art_gallery,casino,gym">
+
+GTmetrix - page speed analysis
+
+cpanel login ip: .lastlogin
+
+<a name="top"></a>
+
+.anchor-locate{
+display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+
+youtube video generator:
+https://www.tools4noobs.com/online_tools/youtube_xhtml/
+
+ <object type="application/x-shockwave-flash" style="width:640px;height:360px;max-width:100%;z-index:999;margin-bottom:-10px;" data="http://www.youtube.com/v/hvjaEASyoYo?color2=FBE9EC&amp;rel=0&amp;autoplay=1&amp;showsearch=0&amp;showinfo=0&amp;version=3&amp;modestbranding=1&amp;fs=1">
+        <param name="movie" value="http://www.youtube.com/v/hvjaEASyoYo?color2=FBE9EC&amp;rel=0&amp;autoplay=1&amp;showsearch=0&amp;showinfo=0&amp;version=3&amp;modestbranding=1&amp;fs=1" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowscriptaccess" value="always" />
+        </object> 
+
+
+
+
+<meta name="format-detection" content="telephone=no">
+
+
+
+
+@media screen and (max-width:767px) {
+   
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+  }
+@media screen and (min-width: 992px) and (max-width:1199px){ 
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+
+@media screen and (min-width: 1800px) {    
+
+}
+
+@media screen and (min-width: 2200px) { 
+
+
+}
+
+
+chrome border radius fix:
+
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+
+
+vertical center modal
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+
+wordpress 
+
+
+
+/*button border and inner border*/
+
+.link {
+color: green;
+background: #fff;
+padding: 15px 40px;  
+    border: 2px solid red;
+    
+    position: relative;
+}
+
+.link::after{
+content: '';
+position: absolute;    
+left: 2px;
+top: 2px;
+right: 2px;
+bottom: 2px;
+ border: 2px solid green;   
+    
+    
+}
+
+.link:hover::after{
+    
+    
+border: 2px solid #fff;      
+}
+
+
+
+
+.col-xs-51,
+.col-sm-51,
+.col-md-51,
+.col-lg-51 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-51 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-51 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-51 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-51 {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+
+
+
+
