@@ -1,0 +1,188 @@
+
+
+// vertically scroll to a distance then show menu:         
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.example-bottomMenu').fadeIn();
+        } else {
+            $('.example-bottomMenu').fadeOut();
+        }
+
+
+        var scrollpos = $(window).scrollTop();
+
+        $('.value').text(scrollpos);
+
+
+
+
+ $('.home-body').css("background-image", "url(../img/bg.jpg)");  
+ 
+ 
+ //google map
+
+google map key:AIzaSyDPGCwNh4U5iof5UVO_redaIX2GlvCjcWA
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPGCwNh4U5iof5UVO_redaIX2GlvCjcWA"></script>
+
+
+// loading animation control
+
+ document.onreadystatechange = function () {
+        if (document.readyState === "complete") {
+            jQuery('.spinner').addClass('hideme');
+           
+            jQuery('#page').addClass('hideme');
+           
+
+        }
+    }
+    
+    
+    #page {
+background: #4b4b4d;
+width: 100%;
+height: 100%;
+overflow: hidden;
+animation:pagefadein 1.9s;
+}
+
+@keyframes pagefadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+
+
+
+
+$(window).on('load', function () {
+    // run code
+});
+
+
+//deprecated in jQuery 1.8
+$(window).load(function(){
+
+});
+
+
+
+  document.onreadystatechange = function () {
+        if (document.readyState === "complete") {
+            jQuery('.loading').addClass('hideme');
+            jQuery('#page').animate({'opacity': '1'});
+            jQuery('.slide-up').addClass('slideUp');
+            jQuery('.slide-down').addClass('slideDown');
+            jQuery('.slide-left').addClass('slideLeft');
+            jQuery('.slide-right').addClass('slideRight');
+
+            setTimeout("slideUp()", 3000);
+
+        }
+    }
+    
+    
+    
+//vertically scroll to a distance then show menu:
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.bottomMenu').fadeIn();
+  } else {
+    $('.bottomMenu').fadeOut();
+  }
+});
+
+// scroll to a position
+
+$(".scroll").click(function(event){
+         event.preventDefault();
+         //calculate destination place
+         var dest=0;
+         if($(this.hash).offset().top > $(document).height()-$(window).height()){
+              dest=$(document).height()-$(window).height();
+         }else{
+              dest=$(this.hash).offset().top;
+         }
+         //go to destination
+         $('html,body').animate({scrollTop:dest}, 1000,'swing');
+     });
+     
+
+
+ var animatequeue = [
+
+         function ()
+        {
+            $(".fade-s1").animate({
+                opacity: 1
+            }, 2000, animatestart);
+
+        },
+
+        function ()
+        {
+            $(".fade-s2").animate({
+                opacity: 1
+            }, 2000, animatestart);
+        },
+
+        function () {
+
+
+ $("#headline").text('A new generation of legal service providers').addClass('mast__text js-spanize');
+            //showText("#headline", "Infinis legal, a new generation of legal service providers", 0, 80);
+
+
+ var s,
+  spanizeLetters = {
+    settings: {
+      letters: $('.js-spanize'),
+    },
+    init: function() {
+      s = this.settings;
+      this.bindEvents();
+    },
+    bindEvents: function(){
+      s.letters.html(function (i, el) {
+        //spanizeLetters.joinChars();
+        var spanizer = $.trim(el).split("");
+        return '<span>' + spanizer.join('</span><span>') + '</span>';
+      });
+    },
+  };
+  spanizeLetters.init();
+
+
+
+        }
+
+
+            ];
+
+
+    $('.fade-s1').queue('slidelist', animatequeue);
+
+
+    var animatestart = function () {
+        $('.fade-s1').dequeue('slidelist');
+    };
+
+    animatestart();
+    
+
+
+
+});
+
+
+/*add sticky menu*/
+var docHeight = $(window).height();
+   var footerHeight = $('#footer').outerHeight();
+   var footerTop = $('#footer').offset().top + footerHeight;
+
+   if (footerTop < docHeight) {
+    $('#footer').addClass('navbar-fixed-bottom');
+   }

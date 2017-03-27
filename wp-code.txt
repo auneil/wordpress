@@ -1,0 +1,156 @@
+<?php
+/*
+ Template Name: Home
+*/
+?>
+
+
+
+
+define('WP_HOME','http://example.com');
+define('WP_SITEURL','http://example.com');
+
+<?php echo get_home_url(); ?>/
+
+<?php echo get_template_directory_uri() ?>/
+
+
+<h4><a href="<?php echo get_permalink($post->ID); ?>"><?php echo substr($post->post_title,0, 30) . "..."; ?></a></h4>
+
+ <script src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
+ 
+ //wordpress call page content
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+the_content();
+endwhile; else: ?>
+
+<?php endif; ?>
+
+
+//call a particular page content
+
+<?php $recent = new WP_Query("page_id=6"); while($recent->have_posts()) : $recent->the_post();?>
+					  				<?php the_content(); ?>
+					  			<?php endwhile; ?>
+					  			<?php wp_reset_query(); ?>
+
+
+
+
+//wordpress show page id plugin: Reveal IDs
+
+
+//text length filter
+
+<?php echo apply_filters('the_excerpt', $post_excerpt); ?>	
+
+or
+		
+<p>
+<?php echo substr($post_excerpt,0, 200) . "..."; ?>
+</p>
+
+
+Images move to AWS - metaslider: have updated my hack. Make the following changes to ml_slider/inc/metaslider.imagehelper.class to have ml_slider work with S3 and CloudFront plugin.
+From:
+$this->id = $slide_id;
+$this->url = $upload_dir['baseurl'] . "/" . get_post_meta( $slide_id, '_wp_attached_file', true );
+$this->path = get_attached_file( $slide_id );
+To:
+$this->id = $slide_id;
+$this->url = wp_get_attachment_url($slide_id);
+$this->path = get_attached_file( $slide_id );
+apply_filters('get_attached_file', $this->path, $slide_id);
+
+made website tpl-format-post-2 
+
+ 
+ //wp example
+ 
+ function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+<?php $posts = get_posts( "category=4&numberposts=3" ); ?>
+<?php if( $posts ) : ?>
+<?php foreach( $posts as $post ) : setup_postdata( $post ); ?>
+
+
+
+<div class="col-sm-4 md-slideup" >
+<div class="col-md-12 layer">
+
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+<img src="<?php echo $image[0]; ?>" alt="using insurance"/>
+
+
+<div class="col-md-12 text">
+
+<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></h2>
+
+<p class="readmore"><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></p>
+  </div>
+</div>
+<div class="col-md-12 bottom">
+<?php the_excerpt(); ?>
+</div>
+</div>
+
+
+
+<?php endforeach; ?>
+<?php endif; ?>
+
+
+
+/*get content from a page*/
+
+<?php $recent = new WP_Query("page_id=6"); while($recent->have_posts()) : $recent->the_post();?>
+					  				<?php the_content(); ?>
+					  			<?php endwhile; ?>
+					  			<?php wp_reset_query(); ?>
+
+
+Photoswipe Masonry Gallery 
+
+Activate
+More Details
+
+
+
+<div class="col-lg-offset-2 col-lg-8 bottom-form">
+<div class="row">
+<div class="col-sm-6">
+[text* first-name placeholder "*first name"] 
+</div>
+
+<div class="col-sm-6">
+[text* last-name placeholder "*last name"]
+</div>
+
+<div class="col-sm-6">
+[tel phone placeholder "phone number"]
+</div>
+
+<div class="col-sm-6">
+[email* your-email placeholder "*email address"] 
+</div>
+
+
+<div class="col-sm-12">
+    [select how-hear "how did you hear about Sea, Clovelly?" "Letterbox Drop" "Realestate.com.au" "Domain.com.au" "Signboard" "Word of mouth" "Other"]
+</div>
+
+<div class="col-sm-12">
+    [textarea your-message placeholder "your enquiry"] 
+</div>
+<div class="col-sm-12 send-container">
+[submit "SUBMIT"]
+</div>
+</div>
+</div>
+
+<div class="clearfix"></div>
